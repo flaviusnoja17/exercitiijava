@@ -1,19 +1,17 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Clasa {
     public static void main (String[]arg){
 
-        System.out.println("Arata temperatura:");
-        Scanner sc = new Scanner(System.in);
-        int temp =  sc.nextInt();
-        if (temp >=100){
+        Random generator = new  Random();
+        int die  = generator.nextInt (6)+1;
+        int count = 0;
+        if (die != 6){
 
-            System.out.println("Apa clocoteste");
-
-        }else{
-
-            System.out.println("Apa nu clocoteste");
-        }
+            System.out.println(die + "valoare");
+            count++;
+            die = generator.nextInt(6)+1;
+        }System.out.println("ai rulat" +count +"ori");
     }
-
 }
