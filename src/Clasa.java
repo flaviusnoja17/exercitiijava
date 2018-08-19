@@ -1,14 +1,14 @@
+import java.util.Scanner;
+
 public class Clasa {
     public static void main (String[]arg){
 
-        int a=7;
-        int b=10;
-        int c;
-        c=b;
-        b=a;
-        c=a;
-        //scrie ceva aici
-        System.out.println("int a="+a+" b="+b);
+        System.out.println("Arata temperatura:");
+        Scanner sc = new Scanner(System.in);
+        double celsius = sc.nextDouble();
+        double farneheit = 9.0 / 5 * celsius +32;
+        System.out.println("Farneheit :" +farneheit);
+
     }
 
 }
