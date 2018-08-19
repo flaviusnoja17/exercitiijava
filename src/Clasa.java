@@ -5,10 +5,15 @@ public class Clasa {
 
         System.out.println("Arata temperatura:");
         Scanner sc = new Scanner(System.in);
-        double celsius = sc.nextDouble();
-        double farneheit = 9.0 / 5 * celsius +32;
-        System.out.println("Farneheit :" +farneheit);
+        int temp =  sc.nextInt();
+        if (temp >=100){
 
+            System.out.println("Apa clocoteste");
+
+        }else{
+
+            System.out.println("Apa nu clocoteste");
+        }
     }
 
 }
